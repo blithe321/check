@@ -1,0 +1,61 @@
+<!DOCTYPE Html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Registration Form (Project 2) </title>
+<style>
+	body {background-color: #151E3D;}
+	h1, p   {color: white;}
+	label, legend {color: white;}
+</style>
+</head>
+<body>
+<h1 align="center"> Registration Form </h1>
+<p align="center"> Please fill out this form with the required information</p>
+	<form action="/action_page.php" method="post">
+		<fieldset>
+			
+			<label for="fname">Enter Your First Name:</label><br>
+			<input id="fname" name="fname" type="text" required><br>
+			<label for="lname">Enter Your Last Name</label><br>
+			<input id="fname" name="lname" type="text" required><br>
+			<label for="email">Enter Your Email:</label><br>
+			<input id="email" name="email" type="email" required><br>
+			<label for="new-password">Create A New Password:</label><br>
+			<input id ="new-password" name="neew-password" type "new-password" required><br>
+		
+		</fieldset>
+		
+		<fieldset>
+			<legend>Account type (required)</legend>
+			<label for="personal-account">Personal</label>
+			<input id="personal-account" name="personal-type" type="radio" class="inline"><br>
+			<label for="business-account">Business</label>
+			<input name="business-account" id="business-account" type="radio" name="account-type" class="inline"> 
+			
+		</fieldset>
+		
+		<fieldset>
+			<label for="profile-picture">Upload a profile picture:</label>
+			<input id="profile-picture" type="file" name="file"><br><pre></pre>
+			<label for="age">Input your age (years):</label>
+			<input id="age" type="number" name="age" min="15" max="50"><br>
+			<label for="referrer">How did you get to know about me?</label>
+				<select id="referrer" name="referrer">
+					<option value="">(select one)</option>
+					<option value="1">from A series</option>
+					<option value="1">from B series</option>
+					<option value="1">from C series</option>
+					<option value="1">from my Boss(Elekere)</option><br>
+				</select><pre></pre>
+			<label for="bio">Provide a bio:</label>
+			<textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding indoors..."></textarea>
+		</fieldset>
+			<label for="terms-and-conditions">I accept the <a></a>terms and conditions</label>
+			<input class="inline" id="terms-and-conditions" type="checkbox"><br><br>
+	<input type="submit" value="Submit">
+</form>
+</body>
+
+</html>
